@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db96d236bea16d34dbdd02624e7aaf04, type: 3}
+  m_Name: Level 2
+  m_EditorClassIdentifier: 
+  levelNumber: 2
+  levelColor: Orange
+  letters:
+  - c
+  - g
+  - o
+  - p
+  sounds:
+  - {fileID: 8300000, guid: 9c09ee80d44ff494399dc7c99a23e239, type: 3}
+  - {fileID: 8300000, guid: 388722de0917cd144bb113139b7d8d71, type: 3}
+  - {fileID: 8300000, guid: 2b755d2ee1c50d24b806da0f0405e7af, type: 3}
+  - {fileID: 8300000, guid: c9052a99763911b45982e38c5ae8b959, type: 3}
+  images:
+  - {fileID: 21300000, guid: dda6583545ddb234fbd9f84a052f8c04, type: 3}
+  - {fileID: 21300000, guid: 0199942be71e648419954250085dfcb1, type: 3}
+  - {fileID: 21300000, guid: d98dbc85954ecf04697bf05505b1114c, type: 3}
+  - {fileID: 21300000, guid: 8bd7ad944c1226c41b2893188b2aff09, type: 3}
+  - {fileID: 21300000, guid: 306eaa54ec599094dba101274ceb4f4f, type: 3}
+  - {fileID: 21300000, guid: dbd749a56d126f24691d28f99db9d21e, type: 3}
+  - {fileID: 21300000, guid: c91cab34065775c47b2f48095f0c5a49, type: 3}
+  - {fileID: 21300000, guid: 85e254d188d535845b104a2d2f115317, type: 3}
+  - {fileID: 21300000, guid: 4078f62f48f64d245909f0903753992c, type: 3}
+  - {fileID: 21300000, guid: 15950f10eb09cf04493d9ce61a23cb53, type: 3}
+  - {fileID: 21300000, guid: 6250009aea324b24ead7db6133667bfd, type: 3}
+  - {fileID: 21300000, guid: ebe7b2517b7df354595387ab72bb2488, type: 3}
+  order01:
+  - c
+  - g
+  - o
+  - p
+  order02:
+  - g
+  - o
+  - p
+  - c
+  order03:
+  - p
+  - g
+  - c
+  - o
+  order04:
+  - o
+  - c
+  - p
+  - g
+  order05: []
+  words: []
