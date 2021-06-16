@@ -11,6 +11,7 @@ public class ChestManager : MonoBehaviour
 
     [Header("Chest")]
     public Chest chest;
+    public float coinSpeed = 10;
 
     [Header("Score")]
     public int goal = 4;
@@ -22,6 +23,8 @@ public class ChestManager : MonoBehaviour
 
     [HideInInspector] public int correctWordNum;
     [HideInInspector] public Sprite correctImage;
+    [HideInInspector] public int score4To1 = 0;
+    [HideInInspector] public int score = 0;
 
     #endregion
 
@@ -40,12 +43,34 @@ public class ChestManager : MonoBehaviour
 
     #endregion
 
+    #region Singleton
+
+    [HideInInspector] public static ChestManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    #endregion
+
     void Start()
     {
         level = LevelSelection.instance.selectedLevel;
         SetWords();
         SetImages();
         RestartLevel();
+    }
+
+    public void UpdateScore()
+    {
+        if (score4To1 >= 4)
+        {
+            score++;
+            score4To1 = 0;
+        }
+
+        scoreText.text = score.ToString();
     }
 
     void SetWords()
@@ -111,6 +136,11 @@ public class ChestManager : MonoBehaviour
     {
         correctWordNum++;
 
+        foreach (Image img in buttonImages)
+        {
+            img.GetComponentInParent<Button>().interactable = true;
+        }
+
         if (correctWordNum >= goal)
         {
             SetWords();
@@ -118,9 +148,6 @@ public class ChestManager : MonoBehaviour
 
         SetImages();
         correctWordText.text = words[correctWordNum];
-        chest.animator.SetBool("Open", false);
-        chest.GetComponent<SpriteRenderer>().sprite = chest.defaultSprite;
-        chest.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     public void CheckClick(Image imageS)
@@ -128,6 +155,11 @@ public class ChestManager : MonoBehaviour
         if (imageS.sprite == correctImage)
         {
             StartCoroutine(LevelDone(3));
+
+            foreach (Image img in buttonImages)
+            {
+                img.GetComponentInParent<Button>().interactable = false;
+            }
         }
     }
 
@@ -137,7 +169,6 @@ public class ChestManager : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
-        chest.animator.enabled = false;
         RestartLevel();
     }
 }

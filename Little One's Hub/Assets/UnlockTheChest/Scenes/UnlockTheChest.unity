@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 31731768}
   - component: {fileID: 31731769}
+  - component: {fileID: 31731770}
   m_Layer: 0
   m_Name: GoldCoin_04
   m_TagString: Untagged
@@ -202,6 +203,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &31731770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31731767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963a70ab5d4f2dc4d8a5b197e061acc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 0
+  defaultPosition: {x: 0.684, y: 0.552, z: 0}
 --- !u!1 &65778770
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581009339}
   - component: {fileID: 581009340}
+  - component: {fileID: 581009341}
   m_Layer: 0
   m_Name: GoldCoin_03
   m_TagString: Untagged
@@ -620,7 +636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581009338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47800002, y: 0.618, z: 0}
+  m_LocalPosition: {x: 0.478, y: 0.618, z: 0}
   m_LocalScale: {x: 0.10000001, y: 0.10000001, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2042942385}
@@ -676,6 +692,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &581009341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581009338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963a70ab5d4f2dc4d8a5b197e061acc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 0
+  defaultPosition: {x: 0.478, y: 0.618, z: 0}
 --- !u!1 &723984161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,7 +1037,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1195,6 +1225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chest: {fileID: 1238592892}
+  coinSpeed: 10
   goal: 4
   scoreText: {fileID: 167220670}
   correctWordText: {fileID: 1082042862}
@@ -1204,6 +1235,8 @@ MonoBehaviour:
   - {fileID: 955758212}
   correctWordNum: 0
   correctImage: {fileID: 0}
+  score4To1: 0
+  score: 0
 --- !u!114 &898690866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1630,7 +1663,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1788,6 +1821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188219180}
   - component: {fileID: 1188219181}
+  - component: {fileID: 1188219182}
   m_Layer: 0
   m_Name: GoldCoin_02
   m_TagString: Untagged
@@ -1803,7 +1837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188219179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.26399994, y: 0.651, z: 0}
+  m_LocalPosition: {x: 0.2639999, y: 0.651, z: 0}
   m_LocalScale: {x: 0.10000001, y: 0.10000001, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2042942385}
@@ -1859,6 +1893,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1188219182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188219179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963a70ab5d4f2dc4d8a5b197e061acc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 0
+  defaultPosition: {x: 0.2639999, y: 0.651, z: 0}
 --- !u!1 &1238592888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2089,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2297,6 +2345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929491244}
   - component: {fileID: 1929491245}
+  - component: {fileID: 1929491246}
   m_Layer: 0
   m_Name: GoldCoin_01
   m_TagString: Untagged
@@ -2312,7 +2361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929491243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.049999874, y: 0.7, z: 0}
+  m_LocalPosition: {x: 0.04999987, y: 0.7, z: 0}
   m_LocalScale: {x: 0.10000001, y: 0.10000001, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2042942385}
@@ -2368,6 +2417,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1929491246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929491243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963a70ab5d4f2dc4d8a5b197e061acc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 1
+  defaultPosition: {x: 0.04999987, y: 0.7, z: 0}
 --- !u!1 &1935263153
 GameObject:
   m_ObjectHideFlags: 0
