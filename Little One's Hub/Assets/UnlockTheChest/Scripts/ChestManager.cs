@@ -137,6 +137,7 @@ public class ChestManager : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
+        chest.animator.enabled = false;
         RestartLevel();
     }
 }

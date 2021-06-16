@@ -9,6 +9,7 @@ public class Chest : MonoBehaviour
 
     public void PlayAnim()
     {
+        animator.enabled = true;
         animator.SetBool("Open", true);
     }
 }
