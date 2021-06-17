@@ -58,4 +58,41 @@ MonoBehaviour:
   - h
   - i
   order05: []
-  words: []
+  words:
+  - ant
+  - hat
+  - hip
+  - hit
+  - hop
+  - hot
+  - man
+  - nan
+  - nap
+  - pan
+  - pig
+  - pin
+  - rag
+  - ram
+  - rat
+  - sit
+  - tin
+  - sip
+  wordImages:
+  - {fileID: 21300000, guid: 16a9b71b83bc297498f6348235b11726, type: 3}
+  - {fileID: 21300000, guid: 0005540373faef1419b5596b8ee5f8f2, type: 3}
+  - {fileID: 21300000, guid: a2975c645145d4f47bf53117c94ba148, type: 3}
+  - {fileID: 21300000, guid: cbaec85036923a7439c2a1ced769b978, type: 3}
+  - {fileID: 21300000, guid: addf0500d0717ae499d19ac0472aaa4c, type: 3}
+  - {fileID: 21300000, guid: 6d093df55fa6d2c45b96db32adaf0e97, type: 3}
+  - {fileID: 21300000, guid: a458458e32381084a93e1f065a0f3240, type: 3}
+  - {fileID: 21300000, guid: 75d556850f68d9e4e9d570f72fb8df12, type: 3}
+  - {fileID: 21300000, guid: b7dd7da623b35cd4b8bec0cb78aea74c, type: 3}
+  - {fileID: 21300000, guid: a06c3d5dd62f0024e9534798c31ad4c3, type: 3}
+  - {fileID: 21300000, guid: 6a08bf73cfa0b6b47b2e3384b4d650a4, type: 3}
+  - {fileID: 21300000, guid: a45290ab2afd31b4eaa93fd125f65a04, type: 3}
+  - {fileID: 21300000, guid: f73e8cdfc3a8b2547b4371aab249c303, type: 3}
+  - {fileID: 21300000, guid: 4e7ed8ea5926b4d4e9e24611ae181091, type: 3}
+  - {fileID: 21300000, guid: c643cd46d3c57814c830fe994eebf30c, type: 3}
+  - {fileID: 21300000, guid: 5287d68b5a9a4ab4b8360b8810a9d78a, type: 3}
+  - {fileID: 21300000, guid: 906efa664701f224980ee9c443205627, type: 3}
+  - {fileID: 21300000, guid: 9251277c856488a4ea5233d88183d8a6, type: 3}

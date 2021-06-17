@@ -24,12 +24,16 @@ public class GoldCoin : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.position, (chestManager.coinSpeed * 10) * Time.deltaTime);
         }
 
-        if (transform.localPosition == target.position)
+        if (transform.position == target.position)
         {
-            move = false;
-            chestManager.score4To1++;
-            chestManager.chest.animator.SetBool("Open", false);
-            chestManager.UpdateScore();
+            ReachedTarget();
         }
+    }
+
+    void ReachedTarget()
+    {
+        chestManager.score4To1++;
+        chestManager.UpdateScore();
+        gameObject.SetActive(false);
     }
 }

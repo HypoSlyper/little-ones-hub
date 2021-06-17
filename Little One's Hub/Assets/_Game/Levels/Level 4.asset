@@ -56,4 +56,39 @@ MonoBehaviour:
   - d
   - f
   order05: []
-  words: []
+  words:
+  - cup
+  - cut
+  - dig
+  - dog
+  - dot
+  - fan
+  - fat
+  - fig
+  - fin
+  - gun
+  - hug
+  - hut
+  - lid
+  - lip
+  - log
+  - mug
+  - sad
+  wordImages:
+  - {fileID: 21300000, guid: 5c1e318d3d39f064193e247b92106941, type: 3}
+  - {fileID: 21300000, guid: 6197cb62648458247be3891f7cc7eb86, type: 3}
+  - {fileID: 21300000, guid: e69085bb8d768794298ff2a60b8e6c7b, type: 3}
+  - {fileID: 21300000, guid: 9e7d26c65770ff547afa9c83a731d222, type: 3}
+  - {fileID: 21300000, guid: 5163a74486239174c89a1aad8e4be5c2, type: 3}
+  - {fileID: 21300000, guid: a5c6e2080126bd34585bc89ac2664242, type: 3}
+  - {fileID: 21300000, guid: a13e72555445cbc44bfc1d15982a50aa, type: 3}
+  - {fileID: 21300000, guid: 74104247fd454d341895bd07f1b31170, type: 3}
+  - {fileID: 21300000, guid: 803538a67f3fd954a8f3b16a01aebbee, type: 3}
+  - {fileID: 21300000, guid: 1bd94363a8ae25f40afcd1e0bb67cf0e, type: 3}
+  - {fileID: 21300000, guid: f9ba96f9e24fae749b3bbafe2d447e4d, type: 3}
+  - {fileID: 21300000, guid: 0f9ff9d476fc68d4d9cd5ff2482a540a, type: 3}
+  - {fileID: 21300000, guid: 62b690fca03345f419ba1d24aaac9870, type: 3}
+  - {fileID: 21300000, guid: 11b19d78194a9ff459edd401262449c1, type: 3}
+  - {fileID: 21300000, guid: 32958e7938e991041ba5639f4a202e7a, type: 3}
+  - {fileID: 21300000, guid: 09f4779043ff42b4eac356895fc7e4fc, type: 3}
+  - {fileID: 21300000, guid: e2090181c455f804c982028a9725f0e6, type: 3}

@@ -58,4 +58,39 @@ MonoBehaviour:
   - p
   - g
   order05: []
-  words: []
+  words:
+  - cap
+  - cat
+  - cop
+  - cot
+  - gag
+  - gap
+  - gas
+  - map
+  - mom
+  - mop
+  - pat
+  - pot
+  - sag
+  - sap
+  - tag
+  - tap
+  - top
+  wordImages:
+  - {fileID: 21300000, guid: 5fd1cb8648cf7884d9978073e7ff1022, type: 3}
+  - {fileID: 21300000, guid: b5452eb4e3076e0468bc9265347463e0, type: 3}
+  - {fileID: 21300000, guid: 660ba251f29a92344afbb0d6b669fb3d, type: 3}
+  - {fileID: 21300000, guid: c6b422b4416904447ab0d24d9b0d6730, type: 3}
+  - {fileID: 21300000, guid: 5b97fae3262e0e8479cbd5539ebcc543, type: 3}
+  - {fileID: 21300000, guid: bdc1614748ac3dd4aa6cbe0be2b07b86, type: 3}
+  - {fileID: 21300000, guid: 8f9ce164a9327894da345209fda856b6, type: 3}
+  - {fileID: 21300000, guid: 757c1ef0fc62b964ca8b146b8458fdbd, type: 3}
+  - {fileID: 21300000, guid: a505da763f1b6154ebacd7ecbd88bcb1, type: 3}
+  - {fileID: 21300000, guid: 0a9e2fb02670700429b8929b718d34a6, type: 3}
+  - {fileID: 21300000, guid: 09e272356cb2e2b4299119adf48579a6, type: 3}
+  - {fileID: 21300000, guid: 2c86449cf6aa50f4b8d85815d31f04a0, type: 3}
+  - {fileID: 21300000, guid: 1805ddfe09037684ba45bc2160a96d5f, type: 3}
+  - {fileID: 21300000, guid: 401a897cddf24ba4dbf0f3540740f849, type: 3}
+  - {fileID: 21300000, guid: 2f06b388d9941e64280e3e7aef8616b7, type: 3}
+  - {fileID: 21300000, guid: 20fec495c91db0349bc90e9297b3722a, type: 3}
+  - {fileID: 21300000, guid: ff16a0a5c92699f4384b573dd5cf41d9, type: 3}

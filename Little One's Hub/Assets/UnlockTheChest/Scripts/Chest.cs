@@ -7,8 +7,8 @@ public class Chest : MonoBehaviour
     public Animator animator;
     public Sprite defaultSprite;
 
-    public void PlayAnim()
+    public void SetAnim(bool open)
     {
-        animator.SetBool("Open", true);
+        animator.SetBool("Open", open);
     }
 }

@@ -12,10 +12,13 @@ public class ChestManager : MonoBehaviour
     [Header("Chest")]
     public Chest chest;
     public float coinSpeed = 10;
+    public GameObject[] goldCoins;
 
     [Header("Score")]
     public int goal = 4;
     public TMP_Text scoreText;
+    public GameObject emoji;
+    public GameObject[] starDisableGo;
 
     [Header("UI")]
     public TMP_Text correctWordText;
@@ -38,6 +41,8 @@ public class ChestManager : MonoBehaviour
 
     List<string> words = new List<string>();
     List<Sprite> images = new List<Sprite>();
+
+    bool levelWon;
 
     Level level;
 
@@ -70,6 +75,12 @@ public class ChestManager : MonoBehaviour
             score4To1 = 0;
         }
 
+        if (score >= 4)
+        {
+            levelWon = true;
+            StartCoroutine(LevelWon(5));
+        }
+
         scoreText.text = score.ToString();
     }
 
@@ -90,7 +101,7 @@ public class ChestManager : MonoBehaviour
 
         for (int i = 0; i < 4; i++)
         {
-            words.Add(level.words[shuffledNums[i]]);
+            words.Add(level.words[shuffledNums[i]].ToLower());
         }
     }
 
@@ -134,6 +145,11 @@ public class ChestManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        foreach (GameObject go in starDisableGo)
+        {
+            go.SetActive(true);
+        }
+
         correctWordNum++;
 
         foreach (Image img in buttonImages)
@@ -148,13 +164,19 @@ public class ChestManager : MonoBehaviour
 
         SetImages();
         correctWordText.text = words[correctWordNum];
+
+        chest.animator.enabled = true;
+        chest.SetAnim(false);
+
+        chest.gameObject.SetActive(false);
+        chest.gameObject.SetActive(true);
     }
 
     public void CheckClick(Image imageS)
     {
         if (imageS.sprite == correctImage)
         {
-            StartCoroutine(LevelDone(3));
+            StartCoroutine(LevelDone(2f));
 
             foreach (Image img in buttonImages)
             {
@@ -165,10 +187,65 @@ public class ChestManager : MonoBehaviour
 
     IEnumerator LevelDone(float delay)
     {
-        chest.PlayAnim();
+        float d = 1.5f;
 
-        yield return new WaitForSeconds(delay);
+        foreach (GameObject gc in goldCoins)
+        {
+            gc.transform.localPosition = gc.GetComponent<GoldCoin>().defaultPosition;
+        }
 
+        chest.SetAnim(true);
+
+        yield return new WaitForSeconds(d);
+
+        LevelEnd();
+
+        yield return new WaitForSeconds(delay - d);
+
+        if (!levelWon)
+        {
+            RestartLevel();
+        }
+    }
+
+    void LevelEnd()
+    {
+        chest.animator.SetBool("Open", false);
+        chest.animator.enabled = false;
+        chest.GetComponent<SpriteRenderer>().sprite = chest.defaultSprite;
+
+        foreach (GameObject gc in goldCoins)
+        {
+            gc.SetActive(true);
+            gc.GetComponent<GoldCoin>().move = false;
+            gc.transform.localPosition = gc.GetComponent<GoldCoin>().defaultPosition;
+            gc.transform.parent.gameObject.SetActive(false);
+        }
+    }
+
+    IEnumerator LevelWon(float delay)
+    {
+        yield return new WaitForSeconds(1);
+
+        foreach (GameObject go in starDisableGo)
+        {
+            go.SetActive(false);
+        }
+
+        emoji.SetActive(true);
+        emoji.GetComponent<Animator>().SetBool("Zoom", true);
+        emoji.GetComponent<AudioSource>().Play();
+
+        yield return new WaitForSeconds(3);
+
+        emoji.GetComponent<Animator>().SetBool("Zoom", false);
+        emoji.SetActive(false);
+
+        score = 0;
+        score4To1 = 0;
+        scoreText.text = score.ToString();
+
+        levelWon = false;
         RestartLevel();
     }
 }
