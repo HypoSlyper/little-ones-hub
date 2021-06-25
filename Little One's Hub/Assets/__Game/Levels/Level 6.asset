@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db96d236bea16d34dbdd02624e7aaf04, type: 3}
+  m_Name: Level 6
+  m_EditorClassIdentifier: 
+  levelNumber: 6
+  levelColor: Indigo
+  letters:
+  - b
+  - w
+  - x
+  - y
+  - z
+  sounds:
+  - {fileID: 8300000, guid: 303abdd222791164ba86696b0b628da6, type: 3}
+  - {fileID: 8300000, guid: 3d50a2e3b8272d44a84cd6e6f2ea11d2, type: 3}
+  - {fileID: 8300000, guid: eea3196821d11394893fe042ca2649ff, type: 3}
+  - {fileID: 8300000, guid: be810546e500a2a4bad046fd0ea4ef4f, type: 3}
+  - {fileID: 8300000, guid: f02e58463af8a7f4fac48ad266e39964, type: 3}
+  images:
+  - {fileID: 21300000, guid: cebbd88e215286e4b99679e1c3ef3790, type: 3}
+  - {fileID: 21300000, guid: 01cdf9c9e8e57ee47ab5f48676028819, type: 3}
+  - {fileID: 21300000, guid: a5fcd811850d20346b362aab69223851, type: 3}
+  - {fileID: 21300000, guid: 6cfa7090ede065142b3cffaa25db311a, type: 3}
+  - {fileID: 21300000, guid: 352a0e60a4454ea49925d23d9531b70f, type: 3}
+  - {fileID: 21300000, guid: ababc2f8101cd6148a6c2fa61c1c4953, type: 3}
+  - {fileID: 21300000, guid: 10c79cf571113d14b99cace928c681e2, type: 3}
+  - {fileID: 21300000, guid: 0de30e684ffb1904f8acf536e05ecd44, type: 3}
+  - {fileID: 21300000, guid: 321b773b1481ed248b6d6fcf75a2f71b, type: 3}
+  - {fileID: 21300000, guid: 934b5b4a16fe5d4499f194524e3341f4, type: 3}
+  - {fileID: 21300000, guid: e023c32f1bdfeb048b6293763c75be80, type: 3}
+  - {fileID: 21300000, guid: 183d4b7157cad8b4382b291733d8f065, type: 3}
+  - {fileID: 21300000, guid: 65b24ec05db39e6478e22aeb78ff5fad, type: 3}
+  - {fileID: 21300000, guid: 2d03e4614a210a343a3eb67e3f124382, type: 3}
+  - {fileID: 21300000, guid: 6b51d2c34812b3548a974c1061abed34, type: 3}
+  order01:
+  - b
+  - w
+  - x
+  - y
+  - z
+  order02:
+  - w
+  - x
+  - y
+  - z
+  - b
+  order03:
+  - x
+  - b
+  - z
+  - y
+  - w
+  order04:
+  - y
+  - z
+  - w
+  - b
+  - x
+  order05:
+  - z
+  - b
+  - x
+  - w
+  - y
+  words:
+  - bag
+  - bat
+  - bed
+  - bin
+  - box
+  - bud
+  - bun
+  - bus
+  - cab
+  - cob
+  - cub
+  - fox
+  - rob
+  - rub
+  - tub
+  - vet
+  - web
+  - yak
+  - zip
+  wordImages:
+  - {fileID: 21300000, guid: 0db84595b72febb44b0972e5d849e2e0, type: 3}
+  - {fileID: 21300000, guid: c9abf3ae5d84e3c459ef22fedafa1257, type: 3}
+  - {fileID: 21300000, guid: 7bcc2eff68bae5341aad3da829139f8f, type: 3}
+  - {fileID: 21300000, guid: 58f7455251e064145814cff15c6d447c, type: 3}
+  - {fileID: 21300000, guid: a4ba6826611548041b983d0325c1d398, type: 3}
+  - {fileID: 21300000, guid: 414670980865dbc409781d831e2e9bf5, type: 3}
+  - {fileID: 21300000, guid: 2d68897bffcbbe349b5f07e670d96f76, type: 3}
+  - {fileID: 21300000, guid: 88c9f813bf5967c44acb16a05ae0bd8a, type: 3}
+  - {fileID: 21300000, guid: b4b6899c00b10b8459430343dc88382a, type: 3}
+  - {fileID: 21300000, guid: 480c8b9b89c2ece40afc3d8a9305f5b5, type: 3}
+  - {fileID: 21300000, guid: 8ac62e82b029ffd4db48b8f1090e8875, type: 3}
+  - {fileID: 21300000, guid: df06b1fe51456eb4481d14f3a9410d8d, type: 3}
+  - {fileID: 21300000, guid: f06ef65842c6e924a9f9022570c9e897, type: 3}
+  - {fileID: 21300000, guid: 1db1ba73bda8e7447916bbc5933653b5, type: 3}
+  - {fileID: 21300000, guid: e8d2690eb74e834488a7b3a8cb0873f6, type: 3}
+  - {fileID: 21300000, guid: ebc82556fa6c4754ba75f1db7b82c305, type: 3}
+  - {fileID: 21300000, guid: 4aea93bbbb9c3dd4689fc51b21b9dd22, type: 3}
+  - {fileID: 21300000, guid: 48b01d8ac21669f41bb35417c12d0fe3, type: 3}
+  - {fileID: 21300000, guid: e4f69920bd6b2db43b6d96c42e1a9a6a, type: 3}
