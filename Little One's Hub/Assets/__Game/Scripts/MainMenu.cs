@@ -8,4 +8,9 @@ public class MainMenu : MonoBehaviour
     {
         LevelSelection.instance.SetLevel(level);
     }
+
+    public void SetLetterAndSound(GameObject button)
+    {
+        LevelSelection.instance.SetLetterAndSound(button);
+    }
 }
